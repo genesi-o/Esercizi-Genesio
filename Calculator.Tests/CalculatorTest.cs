@@ -9,14 +9,14 @@ namespace Calculator.Tests
         [Theory]
         [InlineData(1,2,3)]
         public void AddTwoIntNumberSuccess(int a1, int a2, int result)
-        {
-            //arrange
+        { 
+            //arrange 
             var calculator = new Model.Calculator();
 
-            //act
+            //act 
             var actualResult =calculator.Add(a1,a2);
 
-            //assert
+            //assert 
             actualResult.Should().Be(result);
 
         }
